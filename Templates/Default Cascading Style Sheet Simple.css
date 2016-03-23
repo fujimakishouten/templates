@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/**
+ * Reset browser default style sheet.
+ */
+
+* {
+  margin               : 0;
+  padding              : 0;
+}
+
+
+
+/**
+ * Clearfix
+ */
+
+.clearfix.before, .clearfix.after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* For Internet explorer 6/7 */
+.clearfix {
+    *zoom: 1;
+}
