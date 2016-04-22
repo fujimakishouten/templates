@@ -5,93 +5,88 @@
  */
 
 html {
-    background-color  : #ffffff;
-    color              : #000000;
+    background-color : #ffffff;
+    color            : #000000;
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
-    margin             : 0;
-    padding            : 0;
+    margin  : 0;
+    padding : 0;
 }
 
 table {
-    border-collapse    : collapse;
-    border-spacing     : 0;
+    border-collapse : collapse;
+    border-spacing  : 0;
 }
 
 fieldset, img {
-    border-style       : none;
-    border-width       : 0;
+    border-style : none;
+    border-width : 0;
 }
 
 address, caption, cite, code, dfn, em, strong, th, var, optgroup {
-    font-style         : inherit;
-    font-weight        : inherit;
+    font-style  : inherit;
+    font-weight : inherit;
 }
 
 del, ins {
-    text-decoration    : none;
+    text-decoration : none;
 }
 
 li {
-    list-style-type    : none;
+    list-style-type : none;
 }
 
 caption, th {
-    text-align         : left;
+    text-align : left;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size          : 100%;
-    font-weight        : normal;
+    font-size   : 100%;
+    font-weight : normal;
 }
 
 q:before, q:after {
-    content            : '';
+    content : '';
 }
 
 abbr, acronym {
-    border-style       : none;
-    border-width       : 0;
-    font-variant       : normal;
+    border-style : none;
+    border-width : 0;
+    font-variant : normal;
 }
 
 sup {
-    vertical-align     : baseline;
+    vertical-align : baseline;
 }
 
 sub {
-    vertical-align     : baseline;
+    vertical-align : baseline;
 }
 
 legend {
-    background-color   : #ffffff;
-    color              : #000000;
+    background-color : #ffffff;
+    color            : #000000;
 }
 
 input, button, textarea, select, optgroup, option {
-    font-family        : inherit;
-    font-size          : inherit;
-    font-style         : inherit;
-    font-weight        : inherit;
+    font-family : inherit;
+    font-size   : inherit;
+    font-style  : inherit;
+    font-weight : inherit;
 }
 
 input, button, textarea, select {
-    font-size          : 100%;
+    font-size : 100%;
 }
 
+/**
+ * Clearfix
+ */
 
-
-/* For Internet explorer 6/7 */
-.clearfix.before, .clearfix.after {
-    content: " ";
-    display: table;
+.clearfix.after {
+    content : "";
+    display : table;
+    clear   : both;
 }
 
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}

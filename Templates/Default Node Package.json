@@ -1,9 +1,24 @@
 {
-  "name": "",
-  "version": "",
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+    "name": "",
+    "version": "0.1.0",
+    "description": "",
+    "homepage": "",
+    "license": "MIT",
+    "author": "",
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/mocha ./test"
+    },
+    "dependencies": {
+        "lodash": "*"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "expect.js": "*"
+    }
 }
 
