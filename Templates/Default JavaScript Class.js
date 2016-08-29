@@ -1,5 +1,6 @@
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
-/*jslint node: true, nomen: true, regexp: true, stupid: true, unparam: true, vars: true */
+/* eslint-env es6, mocha, node */
+/* eslint-extends: eslint:recommended */
 "use strict";
 
 
@@ -10,7 +11,6 @@
  * @class
  */
 class ClassName {
-
     /**
      * Constructor
      *
@@ -18,7 +18,6 @@ class ClassName {
      */
     constructor() {
     }
-
 }
 
 

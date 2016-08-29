@@ -14,11 +14,12 @@
         "test": "./node_modules/.bin/mocha ./test"
     },
     "dependencies": {
-        "lodash": "*"
     },
     "devDependencies": {
-        "mocha": "*",
-        "expect.js": "*"
+        "eslint": "*",
+        "expect.js": "*",
+        "mocha": "*"
+
     }
 }
 
