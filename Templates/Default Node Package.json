@@ -11,6 +11,8 @@
         "url": ""
     },
     "scripts": {
+        "cobertura": "./node_modules/.bin/istanbul cover --report cobertura ./node_modules/mocha/bin/_mocha ./test",
+        "coverage": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha ./test",
         "test": "./node_modules/.bin/mocha ./test"
     },
     "dependencies": {
@@ -18,8 +20,11 @@
     "devDependencies": {
         "eslint": "*",
         "expect.js": "*",
+        "istanbul": "*",
         "mocha": "*"
-
+    },
+    "engines": {
+        "node": ">=4.0.0"
     }
 }
 
