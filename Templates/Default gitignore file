@@ -738,7 +738,7 @@ luac.out
 *.hex
 
 
-### Node template
+### Node
 # Logs
 logs
 *.log
@@ -776,6 +776,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# yarn
+yarn.lock
 
 
 ### OCaml template
