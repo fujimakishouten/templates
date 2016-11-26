@@ -16,7 +16,7 @@ fs.readdirSync(__dirname).forEach(function (filename) {
         return;
     }
 
-    var extension = path.extname(filename),
+    const extension = path.extname(filename),
         name = filename.replace(extension, '');
 
     module.exports[name] = require(path.join(__dirname, name));
