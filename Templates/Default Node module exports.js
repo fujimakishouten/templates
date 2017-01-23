@@ -19,7 +19,7 @@ fs.readdirSync(__dirname).forEach(function (filename) {
     const extension = path.extname(filename),
         name = filename.replace(extension, '');
 
-    module.exports[name] = require(path.join(__dirname, name));
+    module.exports[name] = require(path.resolve(__dirname, name));
 });
 
 
