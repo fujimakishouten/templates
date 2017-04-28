@@ -4,7 +4,7 @@
 
 
 
-set -Ceu
+set -Cu
 
 
 
