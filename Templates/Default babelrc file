@@ -1,4 +1,19 @@
 {
-    "presets": ["es2015", "es2016", "es2017"]
+    "env": {
+        "production": {
+            "comments": false,
+            "compact": true,
+            "minified": true,
+            "sourceMaps": false
+        },
+        "development": {
+            "comments": true,
+            "compact": false,
+            "minified": false,
+            "sourceMaps": true
+        }
+    },
+    "plugins": ["transform-runtime"],
+    "presets": ["latest"]
 }
 
