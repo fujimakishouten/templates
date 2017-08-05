@@ -18,10 +18,15 @@
     "dependencies": {
     },
     "devDependencies": {
+        "babel-core": "*",
+        "babel-loader": "*",
+        "babel-plugin-transform-runtime": "*",
+        "babel-preset-latest": "*",
         "eslint": "*",
         "expect.js": "*",
         "istanbul": "*",
-        "mocha": "*"
+        "mocha": "*",
+        "webpack": "*"
     },
     "engines": {
         "node": ">=4.0.0"
