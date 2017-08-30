@@ -23,27 +23,44 @@ module.exports = function (env) {
                 filename: '[name].js'
             },
             module: {
-                rules: [{
-                    test: /\.js$/,
-                    exclude: /(node_modules|bower_components)/,
+                rules: [
+                    /*{
+                        test: /\.js$/,
+                        enforce: 'pre',
+                        use: {
+                            loader: 'source-map-loader'
+                        }
+                    },
+                    {
+                    test: /\.tsx?$/,
                     use: {
-                        loader: 'babel-loader',
-                        options: {
-                            comments: false,
-                            plugins: ['transform-runtime']
+                        loader: 'awesome-typescript-loader'
+                    }
+                    },*/
+                    {
+                        test: /\.js$/,
+                        exclude: /(node_modules|bower_components)/,
+                        use: {
+                            loader: 'babel-loader',
+                            options: {
+                                comments: false,
+                                plugins: ['transform-runtime']
+                            }
                         }
                     }
-                }]
+                ]
             },
             resolve: {
                 modules: [
                     path.resolve(__dirname, './src'),
                     "node_modules"
-                ]
+                ],
+                extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js", ".json"]
             },
             plugins: [
                 new webpack.ProvidePlugin({jQuery: "jquery"})
             ],
+            devtool: "source-map",
             target: "web",
             performance: {
                 hints: "warning",

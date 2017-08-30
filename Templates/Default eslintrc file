@@ -7,9 +7,8 @@
         "node": true
     },
     "parserOptions":{
-        "ecmaFeatures": {
-            "modules": false
-        }
+        "ecmaVersion": 2017,
+        "sourceType": "script" // or "module"
     },
     "extends": "eslint:recommended"
 }
