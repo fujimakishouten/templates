@@ -60,11 +60,10 @@ module.exports = function (env) {
             plugins: [
                 new webpack.ProvidePlugin({jQuery: "jquery"})
             ],
-            devtool: "source-map",
             target: "web",
             performance: {
                 hints: "warning",
-                maxAssetSize: 250 * 1024
+                maxAssetSize: 256 * 1024
             },
             stats: "normal" // "detailed", "verbose"
         };
@@ -80,11 +79,12 @@ module.exports = function (env) {
                 compress: true
             }
         }));
+    } else {
+        parameters.devtool = 'inline-source-map';
     }
 
     return parameters;
 };
-
 
 
 
