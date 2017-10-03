@@ -55,7 +55,7 @@ module.exports = function (env) {
                     path.resolve(__dirname, './src'),
                     "node_modules"
                 ],
-                extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js", ".json"]
+                extensions: ["*", ".webpack.js", ".web.js", ".ts", ".tsx", ".js", ".json"]
             },
             plugins: [
                 new webpack.ProvidePlugin({jQuery: "jquery"})
