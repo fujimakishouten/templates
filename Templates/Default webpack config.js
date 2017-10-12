@@ -44,7 +44,16 @@ module.exports = function (env) {
                             loader: 'babel-loader',
                             options: {
                                 comments: false,
-                                plugins: ['transform-runtime']
+                                plugins: ['transform-runtime'],
+                                presets: [
+                                    ["env", {
+                                        "useBuiltIns": true,
+                                        "targets": {
+                                            // "node": "current",
+                                            "browsers": ["last 1 version"]
+                                        }
+                                    }]
+                                ]
                             }
                         }
                     }

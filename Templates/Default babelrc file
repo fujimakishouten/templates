@@ -14,6 +14,14 @@
         }
     },
     "plugins": ["transform-runtime"],
-    "presets": ["latest"]
+    "presets": [
+        ["env", {
+            "useBuiltIns": true,
+            "targets": {
+                // "node": "current",
+                "browsers": ["last 1 version"]
+            }
+        }]
+    ]
 }
 
