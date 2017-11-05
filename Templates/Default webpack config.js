@@ -46,8 +46,8 @@ module.exports = function (env) {
                                 comments: false,
                                 plugins: ['transform-runtime'],
                                 presets: [
-                                    ["env", {
-                                        "useBuiltIns": true,
+                                    ["@babel/env", {
+                                        "useBuiltIns": "usage",
                                         "targets": {
                                             // "node": "current",
                                             "browsers": ["last 1 version"]
