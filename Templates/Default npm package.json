@@ -11,25 +11,28 @@
         "url": ""
     },
     "scripts": {
+        "babel": "./node_modules/.bin/babel --out-dir dest src",
+        "typescript": "./node_modules/.bin/tsc",
         "cobertura": "./node_modules/.bin/istanbul cover --report cobertura ./node_modules/mocha/bin/_mocha ./test",
         "coverage": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha ./test",
         "test": "./node_modules/.bin/mocha ./test"
     },
     "dependencies": {
+        "@babel/runtime": ""
     },
     "devDependencies": {
-        "babel-core": "*",
-        "babel-loader": "*",
-        "babel-plugin-transform-runtime": "*",
-        "babel-preset-latest": "*",
-        "eslint": "*",
-        "expect.js": "*",
-        "istanbul": "*",
-        "mocha": "*",
-        "webpack": "*"
+        "@babel/cli": "",
+        "@babel/core": "",
+        "@babel/preset-env": "",
+        "@babel/plugin-transform-runtime": "",
+        "babel-loader": "",
+        "eslint": "",
+        "expect.js": "",
+        "istanbul": "",
+        "mocha": "",
+        "webpack": ""
     },
     "engines": {
         "node": ">=4.0.0"
     }
 }
-
