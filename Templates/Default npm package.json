@@ -30,6 +30,7 @@
         "expect.js": "",
         "istanbul": "",
         "mocha": "",
+        "typescript": "",
         "webpack": ""
     },
     "engines": {
