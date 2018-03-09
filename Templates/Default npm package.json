@@ -30,8 +30,13 @@
         "expect.js": "",
         "istanbul": "",
         "mocha": "",
+        "stylelint": "",
+        "stylelint-config-recommended": "",
+        "tslint": "",
+        "tslint-eslint-rules": "",
         "typescript": "",
-        "webpack": ""
+        "webpack": "",
+        "webpack-cli": ""
     },
     "engines": {
         "node": ">=4.0.0"
