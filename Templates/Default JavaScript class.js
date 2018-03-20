@@ -6,15 +6,15 @@
 
 
 /**
- * ClassName
+ * <ClassName>
  *
  * @class
  */
-class ClassName {
+class <ClassName> {
     /**
      * Constructor
      *
-     * @constructs ClassName
+     * @constructs <ClassName>
      */
     constructor() {
     }

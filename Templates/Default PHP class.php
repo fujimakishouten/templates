@@ -16,9 +16,9 @@
  * obtain it through the world-wide-web, please send an email
  * to license@plume.ne.jp so we can send you a copy immediately.
  *
- * @category   karmia
- * @package    net_karmia
- * @subpackage sample
+ * @category   <CategoryName> 
+ * @package    <PackageName>
+ * @subpackage <SubPackageName>
  * @copyright  Copyright (c) Fujimakishouten. (http://www.fujimakishouten.com/)
  * @license    NIT License
  * @version    Release: @package_version@
@@ -28,6 +28,9 @@
  */
 
 
+
+class <ClassName> {
+}
 
 
 
