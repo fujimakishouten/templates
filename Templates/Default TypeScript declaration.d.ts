@@ -1,8 +1,8 @@
 declare module <modulename> {
     export class <ClassName> {
-	property: any;
+        property: any;
 
-	constructor(): void;
+        constructor(): void;
     }
 } 
 
