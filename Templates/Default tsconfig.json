@@ -2,6 +2,7 @@
     "compilerOptions": {
         "allowJs": false,
         "alwaysStrict": true,
+        "baseURL": "./",
         "charset": "utf8",
         "module": "CommonJS",
         "moduleResolution": "node",
@@ -11,11 +12,10 @@
         "preserveConstEnums": true,
         "pretty": true,
         "removeComments": false,
-        "rootDir": "./src",
-        "sourceMap": false
+        "sourceMap": false,
+        "target": "esnext"
     },
-    "exclude": ["node_modules"],
+    "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"], 
     "include": ["./src/**/*"]
-
 }
 
