@@ -44,7 +44,7 @@ module.exports = function (env) {
                             loader: 'babel-loader',
                             options: {
                                 comments: false,
-                                plugins: ['@babel/transform-runtime'],
+                                plugins: ['@babel/plugin-transform-runtime'],
                                 presets: [
                                     ["@babel/env", {
                                         "useBuiltIns": "usage",

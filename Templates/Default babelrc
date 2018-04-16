@@ -13,7 +13,7 @@
             "sourceMaps": true
         }
     },
-    "plugins": ["@babel/transform-runtime"],
+    "plugins": ["@babel/plugin-transform-runtime"],
     "presets": [
         ["@babel/env", {
             "useBuiltIns": "usage",
