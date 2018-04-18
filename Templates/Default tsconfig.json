@@ -13,7 +13,7 @@
         "pretty": true,
         "removeComments": false,
         "sourceMap": false,
-        "target": "esnext"
+        "target": "ES2017"
     },
     "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"], 
     "include": ["./src/**/*"]
