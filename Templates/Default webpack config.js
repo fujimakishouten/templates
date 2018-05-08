@@ -46,7 +46,7 @@ module.exports = function (env) {
                                 comments: false,
                                 plugins: ['@babel/plugin-transform-runtime'],
                                 presets: [
-                                    ["@babel/env", {
+                                    ["@babel/preset-env", {
                                         "useBuiltIns": "usage",
                                         "targets": {
                                             // "node": "current",
