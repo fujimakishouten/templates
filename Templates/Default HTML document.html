@@ -42,11 +42,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="" />
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.honokak.osaka/honoka/4.0.0-alpha.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.honokak.osaka/honoka/4.0.0/css/bootstrap.min.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
         <!-- Material icons -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -70,32 +70,42 @@
     </head>
 
     <body>
-        <header>
-            <div class="navbar navbar-default">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <div class="navbar-header">
-                        <h1>Title</h1>
-                    </div>
-                  </div>
-            </div>
+                    <h1>Title</h1>
+                </div>
+            </nav>
         </header>
 
-        <form class="form-horizonal container">
-            <fieldset>
-                <legend>Form</legend>
-                <div class="form-group">
-                    <label for="text" class="col-lg-2 col-md-2">Text</label>
-                    <div class="col-lg-10 col-md-10">
-                        <input id="text" name="text" type="text" class="form-control" placeholder="Text" />
-                    </div>
+        <div class="container py-5">
+            <h2>Content</h2>
+
+            <article class="py-3">
+                <form class="form-horizonal">
+                    <fieldset>
+                        <legend>Form</legend>
+                        <div class="form-group row">
+                            <label for="text" class="col-lg-2 col-md-2 col-form-label">Text</label>
+                            <div class="col-lg-10 col-md-10">
+                                <input id="text" name="text" type="text" class="form-control" placeholder="Text" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button id="button" type="button" class="btn btn-primary">Button</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </div>
+
+        <footer class="fixed-bottom">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <span>&copy; FujimakiShouten.</span>
                 </div>
-                <div class="form-group">
-                    <div class="col-lg-12 col-md-12">
-                        <button id="button" type="button" class="btn btn-primary">Button</button>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
+            </nav>
+        </footer>
     </body>
 
 </html>

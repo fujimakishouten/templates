@@ -4,6 +4,7 @@
         "alwaysStrict": true,
         "baseUrl": "./",
         "charset": "utf8",
+        "lib": ["DOM", "ES2015", "ES2016", "ES2017"],
         "module": "CommonJS",
         "moduleResolution": "node",
         "noImplicitAny": true,
@@ -15,7 +16,7 @@
         "sourceMap": true,
         "target": "ES2017"
     },
-    "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"], 
+    "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"],
     "include": ["./src/**/*"]
 }
 

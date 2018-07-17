@@ -5,26 +5,31 @@
     "homepage": "",
     "license": "MIT",
     "author": "",
-    "main": "",
+    "main": "index.js",
     "repository": {
         "type": "git",
         "url": ""
     },
     "scripts": {
-        "babel": "./node_modules/.bin/babel --out-dir dest src",
-        "typescript": "./node_modules/.bin/tsc",
-        "cobertura": "./node_modules/.bin/istanbul cover --report cobertura ./node_modules/mocha/bin/_mocha ./test",
-        "coverage": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha ./test",
-        "test": "./node_modules/.bin/mocha ./test"
+        "build": "tsc --lib es2016 ./index.ts",
+        "build:dev": "tsc",
+        "cobertura": "npm run build:dev && istanbul cover --report cobertura _mocha ./test",
+        "coverage": "npm run build:dev && istanbul cover --report html _mocha ./test",
+        "postinstall": "npm run build",
+        "test": "npm run build:dev && _mocha ./test"
     },
     "dependencies": {
-        "@babel/runtime": ""
+        "@babel/runtime": "",
+        "typescript": ""
     },
     "devDependencies": {
         "@babel/cli": "",
         "@babel/core": "",
         "@babel/preset-env": "",
         "@babel/plugin-transform-runtime": "",
+        "@types/expect.js": "",
+        "@types/mocha": "",
+        "@types/node": "",
         "babel-loader": "",
         "eslint": "",
         "expect.js": "",
@@ -36,11 +41,10 @@
         "stylelint-config-recommended": "",
         "tslint": "",
         "tslint-eslint-rules": "",
-        "typescript": "",
         "webpack": "",
         "webpack-cli": ""
     },
     "engines": {
-        "node": ">=4.0.0"
+        "node": ">=8.10.0"
     }
 }
