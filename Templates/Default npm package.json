@@ -13,10 +13,10 @@
     "scripts": {
         "build": "tsc --lib es2016 ./index.ts",
         "build:dev": "tsc",
-        "cobertura": "npm run build:dev && nyc --reporter cobertura _mocha ./test",
-        "coverage": "npm run build:dev && nyc --reporter html _mocha ./test",
+        "cobertura": "npm run build:dev && nyc --reporter cobertura mocha ./test",
+        "coverage": "npm run build:dev && nyc --reporter html mocha ./test",
         "postinstall": "npm run build",
-        "test": "npm run build:dev && _mocha ./test"
+        "test": "npm run build:dev && mocha ./test"
     },
     "dependencies": {
         "@babel/runtime": "",
