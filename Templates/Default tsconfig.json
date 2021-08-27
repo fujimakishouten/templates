@@ -1,22 +1,37 @@
 {
+    "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"],
+    "include": ["./src/**/*", "./tests/**/*"],
     "compilerOptions": {
-        "allowJs": false,
-        "alwaysStrict": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
         "baseUrl": "./",
-        "charset": "utf8",
-        "lib": ["DOM", "ES2015", "ES2016", "ES2017"],
         "module": "CommonJS",
         "moduleResolution": "node",
-        "noImplicitAny": true,
-        "noUnusedLocals": true,
+        "resolveJsonModule": true,
+        "declarationMap": true,
+        "newLine": "LF",
         "outDir": "./dest",
         "preserveConstEnums": true,
-        "pretty": true,
         "removeComments": false,
         "sourceMap": true,
-        "target": "ES2017"
-    },
-    "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"],
-    "include": ["./src/**/*"]
+        "allowJs": false,
+        "checkJs": false,
+        "disableSizeLimit": true,
+        "forceConsistentCasingInFileNames": true,
+        "preserveSymlinks": true,
+        "charset": "utf8",
+        "lib": ["DOM", "ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020"],
+        "target": "ES2020",
+        "noErrorTruncation": true,
+        "pretty": true
+    }
 }
 
