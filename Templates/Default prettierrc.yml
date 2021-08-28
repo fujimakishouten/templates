@@ -1,0 +1,20 @@
+---
+printWidth: 100
+tabWidth: 4
+useTabs: false
+semi: true
+singleQuote: false
+quoteProps: as-needed                # as-needed|consistent|preserve
+jsxSingleQuote: false
+trailingComma: none                  # es5|none|all
+bracketSpacing: false
+jsxBracketSameLine: true
+arrowParens: always                  # always|avoid
+requirePragma: false
+insertPragma: false
+proseWrap: preserve                  # always|never|preserve
+htmlWhitespaceSensitivity: strict    # css|strict|ignore
+vueIndentScriptAndStyle: true
+endOfLine: lf                        # lf|crlf|cr|auto
+embeddedLanguageFormatting: auto     # auto|off
+
