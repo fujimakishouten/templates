@@ -1,0 +1,30 @@
+---
+env:
+    browser: false
+    commonjs: false
+    es6: true
+    es2017: true
+    es2020: true
+    es2021: true
+    node: true
+    mocha: true
+    mongo: true
+    shared-node-broswer: false
+    worker: false
+plugins:
+  - "@typescript-eslint"
+parser: "@typescript-eslint/parser"
+parserOptions:
+    # ESLint parser options
+    ecmaVersion: 2020        # Same as 11
+    sourceType: script       # "module" if your code is in ECMAScript modules.
+    ecmaFeatures:
+      globalReturn: false    # Allow return statements in the global scope
+      impliedStrict: true    # Enable global strict mode.
+    # TypeScript parser options
+    project: ./tsconfig.json
+extends:
+    - eslint:recommended
+    - plugin:@typescript-eslint/eslint-recommended
+    - plugin:@typescript-eslint/recommended
+
