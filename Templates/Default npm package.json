@@ -43,11 +43,12 @@
         "source-map-loader": "",
         "stylelint": "",
         "stylelint-config-recommended": "",
+        "ts-loader": "",
         "webpack": "",
         "webpack-cli": ""
     },
     "engines": {
-        "node": ">=8.10.0"
+        "node": ">=14.18.0"
     }
 }
 
