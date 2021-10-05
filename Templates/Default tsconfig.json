@@ -1,5 +1,5 @@
 {
-    "exclude": ["bower_components", "jspm_packages", "node_modules", "./dest"],
+    "exclude": ["jspm_packages", "node_modules", "./dest"],
     "include": ["./src/**/*", "./tests/**/*"],
     "compilerOptions": {
         "allowUnreachableCode": false,
@@ -16,6 +16,7 @@
         "module": "CommonJS",
         "moduleResolution": "node",
         "resolveJsonModule": true,
+        "declaration": true,
         "declarationMap": true,
         "newLine": "LF",
         "outDir": "./dest",
