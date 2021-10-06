@@ -50,7 +50,8 @@
         "stylus-loader": "",
         "ts-loader": "",
         "webpack": "",
-        "webpack-cli": ""
+        "webpack-cli": "",
+        "webpack-fix-style-only-entries": ""
     },
     "engines": {
         "node": ">=14.18.0"

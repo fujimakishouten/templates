@@ -9,7 +9,8 @@
 const os = require('os'),
     path = require('path'),
     webpack = require('webpack'),
-    MiniCssExtractPlugin = require("mini-css-extract-plugin");
+    MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+    FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
 
 // Export module
@@ -22,7 +23,7 @@ module.exports = function (env) {
             },
             output: {
                 path : path.resolve(__dirname, './dest'),
-                filename: '[name].js'
+                filename: './javascripts/[name].js'
             },
             module: {
                 rules: [{
@@ -67,7 +68,8 @@ module.exports = function (env) {
                 extensions: ['*', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.json']
             },
             plugins: [
-                new MiniCssExtractPlugin({filename: 'style.css'})
+                new FixStyleOnlyEntriesPlugin(),
+                new MiniCssExtractPlugin({filename: './styles/[name].css'})
             ],
             target: 'web',
             performance: {
