@@ -14,7 +14,7 @@ const os = require('os'),
 
 
 // Export module
-module.exports = function (env) {
+module.exports = (env) => {
     const environment = env || {},
         parameters = {
             entry: {
@@ -96,4 +96,14 @@ module.exports = function (env) {
 
     return parameters;
 };
+
+
+
+/*
+ * Local variables:
+ * tab-width: 4
+ * c-basic-offset: 4
+ * c-hanging-comment-ender-p: nil
+ * End:
+ */
 
