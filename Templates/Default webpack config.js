@@ -21,9 +21,15 @@ module.exports = (env) => {
                 app: './src/app.ts',
                 style: './styles/style.styl'
             },
+            experiments: {
+                outputModule: true
+            },
             output: {
                 path : path.resolve(__dirname, './dest'),
-                filename: './javascripts/[name].js'
+                filename: './javascripts/[name].js',
+                library: {
+                    type: "module"
+                }
             },
             module: {
                 rules: [{
